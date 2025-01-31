@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse4Pets</title>
+
+    <!-- google font cdn -->
+    <!-- ADlaM Display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <!-- font Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUi & Tailwind CSS CDN -->
+    <!-- daisyui -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/4c1e3bce46.js" crossorigin="anonymous"></script>
+
+    <!-- style -->
+    <style>
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+</head>
+
+<!-- navigation bar -->
+<nav class="bg-orange-50">
+
+    <!-- nav section -->
+    <section class="lg:max-w-screen-xl mx-auto max-sm:px-4 px-16 lg:px-25 flex justify-between border-b border-gray-500 lg:border-none">
+
+        <!-- logo -->
+        <div class="flex items-center gap-2 py-4">
+            <img src="./c1-assets/logo-header.png" alt="">
+            <h2 class="font-sora text-2xl max-sm:hidden">Browse <span class="text-yellow-400">4</span> Pets</h2>
+        </div>
+
+        <!-- nav link list -->
+        <ul class="font-sora flex gap-6 items-center max-sm:hidden">
+            <a href="">
+                <li>Find a pet</li>
+            </a>
+            <a href="">
+                <li>Breeds</li>
+            </a>
+            <a href="">
+                <li>Contact us</li>
+            </a>
+        </ul>
+
+        <!-- icons and buttons -->
+        <div class="flex items-center gap-4">
+            <a href=""><img class="max-sm:hidden" src="./c1-assets/notification.svg" alt=""></a>
+            <a href=""><img class="max-sm:hidden" src="./c1-assets/search.svg" alt=""></a>
+            <a href=""><button class="rounded-lg border-2 border-yellow-400 px-6 py-2 font-sora max-sm:hidden">Login</button></a>
+            <a href=""><button
+                    class="rounded-lg bg-yellow-400 text-blue-950 font-sora px-6 py-2.5 font-sora max-sm:hidden">Register</button></a>
+        </div>
+
+        <!-- ham-menu -->
+         <img class="sm:hidden" src="\./c1-assets/icon-menu.svg" alt="">
+
+    </section>
+</nav>
+
+<!-- main body -->
+
+<body>
+
+    <!-- hero section -->
+    <section class="lg:max-w-screen-xl mx-auto max-sm:px-4 px-16 lg:px-25">
+        <div class="sm:h-screen sm:bg-[url('/c1-assets/cat-big.png')] w-100% bg-center bg-contain bg-no-repeat">
+            <h1 class="font-adlam text-6xl mt-20">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
+            <p class="font-sora text-xl py-8">Discover a world of treats, toys, and essentials handpicked for <br> your
+                furry friends. Shop now and make tails wag with joy!</p>
+            <a href=""><button
+                    class="rounded-lg bg-yellow-400 text-blue-950 font-sora px-6 py-2.5 font-sora">Register</button></a>
+        </div>
+        <img src="/c1-assets/cat-big.png" class="sm:hidden">
+    </section>
+
+</body>
+
+<!-- footer -->
+<footer>
+
+</footer>
+
+</html>
