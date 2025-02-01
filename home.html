@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        img {
+            width: 400px;
+            height: 150px;
+            object-fit: cover;
+            object-position: 5% 20%;
+        }
+
+        .parent {
+            margin: 200px auto;
+            width: 450px;
+            height: 200px;
+            background: blue;
+            position: relative;
+        }
+
+        .child {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://cdn.pixabay.com/photo/2025/01/26/20/33/robin-9361610_1280.jpg" />
+
+    <div class="parent">
+        <div class="child"></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus in ut itaque ipsum libero ipsam animi quidem ratione architecto tempore laboriosam quas natus, modi ab at cupiditate nulla corrupti facilis, iste laborum atque sapiente maxime. Excepturi repellat officia consectetur quasi cum libero quas magni cumque, expedita sed, porro nobis dolores.</div>
+    </div>
+</body>
+
+</html>
